@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Virtual Assistant Services - Cut Your Admin Costs in Half</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .phone {
+            font-size: 1.1rem;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .savings-highlight {
+            font-size: 1.5rem;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #fff5f5;
+            border-radius: 10px;
+            border-left: 5px solid #e74c3c;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+        
+        .services-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .service-card {
+            background: #f8f9ff;
+            border-radius: 15px;
+            padding: 2rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card ul {
+            list-style: none;
+        }
+        
+        .service-card li {
+            padding: 0.5rem 0;
+            color: #666;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .service-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .pricing-section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .pricing-card {
+            background: linear-gradient(135deg, #f8f9ff, #ffffff);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            border: 2px solid #e0e6ff;
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+        }
+        
+        .pricing-card.featured {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price-details {
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+        
+        .terms-section {
+            background: #f8f9ff;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .terms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .terms-item {
+            text-align: center;
+        }
+        
+        .terms-item h4 {
+            font-size: 1.2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .terms-item p {
+            color: #666;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group.half {
+            margin-bottom: 0;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: white;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+        
+        .form-submit {
+            width: 100%;
+            margin-top: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .form-submit:hover {
+            background: white;
+            color: #667eea;
+        }
+        
+        .chat-widget {
+            backdrop-filter: blur(10px);
+        }
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .hero, .services-section, .pricing-section, .contact-section {
+                padding: 2rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">AI First Contact & Elite Med Listings</div>
+                <div class="phone">📞 Call Us: (555) 123-4567</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Cut Your Admin Costs in Half</h1>
+            <div class="savings-highlight">
+                Save $12,000+ Annually vs. Hiring Local Staff
+            </div>
+            <p>Professional virtual assistant services for California businesses. Get reliable, experienced support starting as low as $10/hour instead of paying $20-25/hour plus benefits for local staff.</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
+        </section>
+
+        <section class="services-section">
+            <h2 class="section-title">What We Handle For You</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📞 Front Desk & Reception</h3>
+                    <ul>
+                        <li>Answer phones professionally</li>
+                        <li>Schedule appointments</li>
+                        <li>Handle customer inquiries</li>
+                        <li>Transfer calls to appropriate staff</li>
+                        <li>Take detailed messages</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>📧 Administrative Support</h3>
+                    <ul>
+                        <li>Email management & responses</li>
+                        <li>Data entry & database management</li>
+                        <li>Document preparation</li>
+                        <li>Customer follow-up</li>
+                        <li>Basic bookkeeping tasks</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>⚕️ Medical Practice Support</h3>
+                    <ul>
+                        <li>HIPAA-certified agents</li>
+                        <li>Insurance verification</li>
+                        <li>Appointment reminders</li>
+                        <li>Patient intake coordination</li>
+                        <li>Medical records management</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>⚖️ Legal Support Services</h3>
+                    <ul>
+                        <li>Client intake & screening</li>
+                        <li>Case file management</li>
+                        <li>Court date scheduling</li>
+                        <li>Document preparation</li>
+                        <li>Client communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <h2 class="section-title">Transparent Pricing</h2>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Standard Support</h3>
+                    <div class="price">$10</div>
+                    <div class="price-details">per hour</div>
+                    <p>Perfect for general admin tasks, customer service, and front desk support</p>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>Medical/Technical</h3>
+                    <div class="price">$13</div>
+                    <div class="price-details">per hour</div>
+                    <p>HIPAA-certified agents for medical practices and technical support roles</p>
+                </div>
+            </div>
+            
+            <div class="terms-section">
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: #333;">Service Terms</h3>
+                <div class="terms-grid">
+                    <div class="terms-item">
+                        <h4>Minimum Hours</h4>
+                        <p>30 hours per week minimum commitment</p>
+                    </div>
+                    <div class="terms-item">
+                        <h4>Contract Terms</h4>
+                        <p>Month-to-month with 90-day minimum, then converts to annual</p>
+                    </div>
+                    <div class="terms-item">
+                        <h4>Setup Fee</h4>
+                        <p>50% of first month's expected spend</p>
+                    </div>
+                    <div class="terms-item">
+                        <h4>Coverage Hours</h4>
+                        <p>Monday-Friday, 8am-6pm Pacific Time</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; background: #e8f5e8; padding: 2rem; border-radius: 15px; margin-top: 2rem;">
+                <h3 style="color: #27ae60; margin-bottom: 1rem;">💰 Cost Comparison Example</h3>
+                <p style="font-size: 1.1rem; color: #333; margin-bottom: 1rem;">
+                    <strong>California Local Hire:</strong> $25/hour × 30 hours × 4 weeks = <span style="color: #e74c3c; font-weight: bold;">$3,000/month</span><br>
+                    <strong>Our Service:</strong> Starting as low as $10/hour × 30 hours × 4 weeks = <span style="color: #27ae60; font-weight: bold;">$1,200/month</span>
+                </p>
+                <p style="font-size: 1.3rem; color: #27ae60; font-weight: bold;">You Save: $1,800/month = $21,600/year!</p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Ready to Cut Your Costs?</h2>
+            <p>Get started with professional virtual assistant services today. Fill out the form below and we'll contact you within 24 hours with a customized proposal.</p>
+            
+            <form action="https://formspree.io/f/xwpejgeq" method="POST" class="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="business">Business Name *</label>
+                        <input type="text" id="business" name="business" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Service Interest *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select Service Type</option>
+                        <option value="general-admin">General Administrative Support</option>
+                        <option value="medical-hipaa">Medical/HIPAA Certified Support</option>
+                        <option value="legal-support">Legal Support Services</option>
+                        <option value="front-desk">Front Desk/Reception</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="hours">Hours Needed Per Week</label>
+                        <select id="hours" name="hours">
+                            <option value="">Select Hours</option>
+                            <option value="30-40">30-40 hours</option>
+                            <option value="40-60">40-60 hours</option>
+                            <option value="60+">60+ hours</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group half">
+                        <label for="current-cost">Current Monthly Admin Costs</label>
+                        <select id="current-cost" name="current-cost">
+                            <option value="">Select Range</option>
+                            <option value="under-2000">Under $2,000</option>
+                            <option value="2000-4000">$2,000 - $4,000</option>
+                            <option value="4000-6000">$4,000 - $6,000</option>
+                            <option value="6000+">$6,000+</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Tell us about your specific needs (optional)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="What administrative tasks are taking up most of your time?"></textarea>
+                </div>
+                
+                <button type="submit" class="cta-button form-submit">Request Information</button>
+                
+                <!-- Chat Widget -->
+                <div class="chat-widget" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.1); border-radius: 10px; text-align: center;">
+                    <p style="margin-bottom: 1rem; opacity: 0.9;">Need immediate answers? Chat with us now:</p>
+                    <script 
+                      src="https://widgets.leadconnectorhq.com/loader.js"  
+                      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+                     data-widget-id="67b5221fa81d1cd5b6d76a11"   > 
+                     </script>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AI First Contact & Elite Med Listings. Professional virtual assistant services for California businesses.</p>
+    </footer>
+</body>
+</html>
